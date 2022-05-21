@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+<listeners>
+    <listener class-name="org.tora.utility.ListenerTest"/>
+</listeners>
+    <test verbose="2" preserve-order="true" name="Test">
+        <classes>
+            <class name="org.tora.testcases.android.GeneralStore_TC2_ToastMessageTest"></class>
+            <class name="org.tora.testcases.android.GeneralStore_TC1Test"></class>
+            <class name="org.tora.testcases.ios.UiKitCatalogIOSTest1"></class>
+        </classes>
+    </test>
+</suite>

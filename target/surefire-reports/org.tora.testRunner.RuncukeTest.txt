@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: org.tora.testRunner.RuncukeTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 65.955 s <<< FAILURE! - in org.tora.testRunner.RuncukeTest
+runScenario(org.tora.testRunner.RuncukeTest)  Time elapsed: 14.468 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused: no further information
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'VISHNUNANDINI', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: driver.version: AndroidDriver
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+runScenario(org.tora.testRunner.RuncukeTest)  Time elapsed: 12.377 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused: no further information
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'VISHNUNANDINI', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: driver.version: AndroidDriver
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+runScenario(org.tora.testRunner.RuncukeTest)  Time elapsed: 12.293 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused: no further information
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'VISHNUNANDINI', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: driver.version: AndroidDriver
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+runScenario(org.tora.testRunner.RuncukeTest)  Time elapsed: 12.261 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused: no further information
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'VISHNUNANDINI', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: driver.version: AndroidDriver
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+runScenario(org.tora.testRunner.RuncukeTest)  Time elapsed: 12.274 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused: no further information
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'VISHNUNANDINI', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: driver.version: AndroidDriver
+Caused by: java.net.ConnectException: Connection refused: no further information
+
