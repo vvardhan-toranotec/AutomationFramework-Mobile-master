@@ -1,9 +1,0 @@
-org\tora\stepDefinitions\android\GeneralStoreTotalProductValidationSteps.class
-org\tora\stepDefinitions\android\LoginSteps.class
-org\tora\DeviceOptions.class
-org\tora\stepLogic\android\GenerateStoreTotalProductLogic.class
-org\tora\utility\ListenerTest.class
-org\tora\pageObject\android\FormPageDOB.class
-org\tora\generic\Base.class
-org\tora\generic\BaseAll.class
-org\tora\utility\Scroll.class
