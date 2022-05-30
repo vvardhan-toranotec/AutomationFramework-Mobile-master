@@ -15,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tora.DeviceOptions;
 import org.tora.generic.BaseAll;
+import org.tora.utility.PropertyConnection;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,7 +30,10 @@ public class Hooks extends BaseAll {
     public void beforeScenario(Scenario scenario) throws Exception {
         logger.info("The test is just starting...");
         logger.info("The scenario: " + scenario.getName() + " test is BEGINNING...");
-        appiumDriver = initializeDriver(DeviceOptions.lookup(System.getProperty("platform")).toString(), System.getProperty("appName"));
+        Properties properties = new PropertyConnection().getProperties("global.properties");
+        String platForm = properties.getProperty("deviceRealA");
+        String appName = properties.getProperty("GeneralStoreApp");
+        appiumDriver = initializeDriver(DeviceOptions.lookup(platForm).toString(), appName);
     }
 
     @After
@@ -49,8 +53,8 @@ public class Hooks extends BaseAll {
                 FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/global.properties");
                 Properties prop = new Properties();
                 prop.load(fis);
-                File appDir = new File("src");
-                File app = new File(appDir, prop.getProperty(appName));
+                File appDir = new File("src/main/resources/Apps/");
+                File app = new File(appDir, appName);
                 cap.setCapability(MobileCapabilityType.DEVICE_NAME, prop.getProperty("deviceEmu"));
                 cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
                 cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");

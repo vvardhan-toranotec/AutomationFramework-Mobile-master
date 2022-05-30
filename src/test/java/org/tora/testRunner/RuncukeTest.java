@@ -10,6 +10,7 @@ import io.cucumber.testng.CucumberOptions;
                 glue = "org.tora",
                 dryRun = false,
                 monochrome = true,
+                tags = "@Vishnu",
                 plugin = {"pretty", "html:target/cucumber-report.html", "json:target/cucumber.json", "junit:target/cucumber.xml"}
         )
 public class RuncukeTest extends AbstractTestNGCucumberTests {
