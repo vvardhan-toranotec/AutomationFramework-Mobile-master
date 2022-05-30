@@ -85,7 +85,7 @@ def update_ticket_status(tickets):
     issues_updated_count = 0
     # First get the issue details to see if it's already Automated
     for ticket in tickets:
-        get_endpoint = f'rest/api/2/issue/{ticket}'
+        get_endpoint = f'rest/api/3/issue/{ticket}'
         transition_endpoint = f'rest/api/2/issues/{ticket}/transitions'
 
         print(jira_base_url + get_endpoint)
