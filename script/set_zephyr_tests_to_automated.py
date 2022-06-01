@@ -109,7 +109,7 @@ def update_ticket_status(tickets):
                 print(f'INFO: {ticket} is already AUTOMATED')
                 already_automated_tickets.append(ticket)
                 continue
-            else:
+            elif current_status == automated_transition_id:
                 print(f'INFO: {ticket} is not AUTOMATED, updating status...')
                 transition_response = update_status(ticket)
                 print('Updated status to resolve', response.status_code)
@@ -123,6 +123,9 @@ def update_ticket_status(tickets):
                     print(f'INFO: Set {ticket} to AUTOMATED')
                     automated_tickets.append(ticket)
                     issues_updated_count += 1
+            else:
+                print(f'WARNING: {ticket} is not set To Be Automated status earlier...')
+                print(f'Please make sure to set To Be Automated status and then run again')
     if issues_updated_count > 0:
         print('\n' + str(issues_updated_count) + " issue(s) set to AUTOMATED")
         print('\n**********SUMMARY**********')

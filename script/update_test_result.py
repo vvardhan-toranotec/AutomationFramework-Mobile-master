@@ -47,7 +47,7 @@ project_summary = {
 jira_headers = {
     'Content-Type': 'application/json;charset=UTF-8',
     'Accept': 'application/json',
-    'x-acpt': '7e07efa3325174a5c68ef18f5b03cbce1151342f043db5bead534c686243cc1692585d2ecea48f6a5e8d131f1a701e447017d6e969062b4f695caf77e1b2ed81290e891c09906ac4c55e94a795e0733e641d8303030470b314b5d3226833250e5dda64756a3d6f7bc475089be14538b5cf67c30e1ee9994d182d86acd8341ae41051b63f80a7bfa310af5b8290e5bab442f08a03a557dc46060c853b5bf7db14a8e79241ba57051d1c344633eeb222e2052f938a0e532f956e54e3abdb9aa85f'
+    'x-acpt': sys.argv[1]
 }
 
 
