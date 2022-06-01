@@ -53,7 +53,7 @@ public class Hooks extends BaseAll {
                 FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/global.properties");
                 Properties prop = new Properties();
                 prop.load(fis);
-                File appDir = new File("src/main/resources/Apps/");
+                File appDir = new File("src/main/resources/Apps");
                 File app = new File(appDir, appName);
                 cap.setCapability(MobileCapabilityType.DEVICE_NAME, prop.getProperty("deviceEmu"));
                 cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
